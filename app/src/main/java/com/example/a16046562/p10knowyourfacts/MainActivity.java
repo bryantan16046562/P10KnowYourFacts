@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 
 import java.util.ArrayList;
@@ -32,6 +33,14 @@ public class MainActivity extends AppCompatActivity {
         al.add(new Frag3());
         adapter = new MyFragmentPagerAdapter(fm, al);
         vPager.setAdapter(adapter);
+
+        btnreadlaterr = (Button) findViewById(R.id.btnReadLater);
+        btnreadlaterr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
     @Override
